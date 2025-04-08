@@ -1,0 +1,21 @@
+h1 {
+  color: rgb(20, 68, 116);
+}
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+  border: 1px solid rgb(47, 120, 184);
+}
+@media screen and (max-width: 900px) {
+  ol {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+li {
+  height: 3rem;
+  line-height: 3rem;
+}
+li:nth-child(1) {
+  background-color: rgb(244, 130, 225);
+}
