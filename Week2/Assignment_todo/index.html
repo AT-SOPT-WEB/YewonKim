@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TODO</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	</head>
+	<body>
+		<nav>TO-DO-LIST</nav>
+		<header>
+			<button class="allBtn">전체</button>
+			<button class="completedBtn">완료됨</button>
+			<button class="incompleteBtn">미완료</button>
+			<div class="dropdown">
+				<button class="topDropbtn">
+					중요도<i class="fa-solid fa-caret-down"></i>
+				</button>
+				<ul class="topDropdownContent">
+					<li data-priority="1">1</li>
+					<li data-priority="2">2</li>
+					<li data-priority="3">3</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<section class="topSection">
+				<input type="text" placeholder="할 일을 입력하세요" />
+				<div class="dropdown">
+					<button class="dropbtn">
+						중요도 선택<i class="fa-solid fa-caret-down"></i>
+					</button>
+					<ul class="dropdownContent">
+						<li data-priority="1">1</li>
+						<li data-priority="2">2</li>
+						<li data-priority="3">3</li>
+					</ul>
+				</div>
+				<button class="addBtn">추가</button>
+			</section>
+			<button class="deleteBtn">삭제</button>
+			<button class="completeBtn">완료</button>
+			<table>
+				<thead>
+					<tr class="tableHead">
+						<th><input type="checkbox" class="todoInput" disabled /></th>
+						<th>중요도</th>
+						<th>완료됨</th>
+						<th>할 일</th>
+					</tr>
+				</thead>
+				<tbody class="todoList"></tbody>
+			</table>
+		</main>
+		<script type="module" src="script.js"></script>
+	</body>
+</html>
